@@ -1,0 +1,19 @@
+scalar Date
+
+type Query { 
+  getBook: [Book]
+}
+
+type Mutation {
+  addBook(title: String, author: String): Book
+}
+
+type Book {
+  name: String!
+  author: String!
+}
+
+type Author {
+  name: String!
+  lastname: String!
+}
